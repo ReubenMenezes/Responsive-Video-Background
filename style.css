@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.full-screen{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.full-screen video{
+    position: absolute;
+    /* For responsiveness */
+    min-width: 100%;
+    min-height: 100%;
+    /* Centers the Video  */
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    /* Simply makes the h1 visible */
+    z-index: -1;
+}
+
+.full-screen-content{
+    background-color:white;
+}
+
+.full-screen-content h1{
+    font-weight:lighter;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width:500px){
+    h1{
+        font-size:13px;
+    }
+}
